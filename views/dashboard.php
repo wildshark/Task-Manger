@@ -115,4 +115,4 @@
                     </div>
                 </div>
          </div>";
-$pageData->pagecontent=$page;
+$pageConfig->pagecontent=$page;

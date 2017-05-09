@@ -12,7 +12,7 @@ $pageProfile="
 	<head>
 		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
 		<meta charset='utf-8' />
-		<title>$pageData->headertitle</title>
+		<title>$pageConfig->headertitle</title>
 
 		<meta name=\"description\" content=\"3 styles with inline editable feature\" />
 		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\" />
@@ -70,10 +70,10 @@ $pageProfile="
                         </button>
 
                         <div class='navbar-header pull-left'>
-                            <a href='$pageData->url_dashboard' class='navbar-brand'>
+                            <a href='$pageConfig->url_dashboard' class='navbar-brand'>
                                 <small>
                                     <i class='fa fa-leaf'></i>
-                                       $pageData->dashboardtitle
+                                       $pageConfig->dashboardtitle
                                 </small>
                             </a>
                         </div>
@@ -241,7 +241,7 @@ $pageProfile="
                                             <ul class='dropdown-menu dropdown-navbar'>
                                                 <li>
                                                     <a href='#' class='clearfix'>
-                                                        <img src='$pageData->avatar' class='msg-photo' alt='$pageData->altName' />
+                                                        <img src='$pageConfig->avatar1' class='msg-photo' alt='$pageConfig->altName' />
                                                         <span class='msg-body'>
                                                             <span class='msg-title'>
                                                                 <span class='blue'>Alex:</span>
@@ -258,7 +258,7 @@ $pageProfile="
 
                                                 <li>
                                                     <a href='#' class='clearfix'>
-                                                        <img src='$pageData->avatar3' class='msg-photo' alt='$pageData->altName' />
+                                                        <img src='$pageConfig->avatar13' class='msg-photo' alt='$pageConfig->altName' />
                                                         <span class='msg-body'>
                                                             <span class='msg-title'>
                                                                 <span class='blue'>Susan:</span>
@@ -287,10 +287,10 @@ $pageProfile="
 
                                 <li class='light-blue dropdown-modal'>
                                     <a data-toggle='dropdown' href='#' class='dropdown-toggle'>
-                                        <img class='nav-user-photo' src='$pageData->userimages' alt='$pageData->altName' />
+                                        <img class='nav-user-photo' src='$pageConfig->userimages' alt='$pageConfig->altName' />
                                         <span class='user-info'>
-                                            <small>$pageData->welcomelabel</small>
-                                            $pageData->usernamelabel
+                                            <small>$pageConfig->welcomelabel</small>
+                                            $pageConfig->usernamelabel
                                         </span>
 
                                         <i class='ace-icon fa fa-caret-down'></i>
@@ -314,7 +314,7 @@ $pageProfile="
                                         <li class='divider'></li>
 
                                         <li>
-                                            <a href='$pageData->url_logout'>
+                                            <a href='$pageConfig->url_logout'>
                                                 <i class='ace-icon fa fa-power-off'></i>
                                                 Logout
                                             </a>
@@ -367,7 +367,7 @@ $pageProfile="
                         </div><!-- /.sidebar-shortcuts -->
                             <!--widgets menu bar-->
 
-                            $pageData->pagewidgets
+                            $pageConfig->pagewidgets
 
 				            <!-- /.Widget menu bar-list -->
                         <!-- /.nav-list -->
@@ -389,7 +389,7 @@ $pageProfile="
                                     <li>
                                         <a href='#'>More Pages</a>
                                     </li>
-                                    <li class='active'>$pageData->activepage</li>
+                                    <li class='active'>$pageConfig->activepage</li>
                                 </ul><!-- /.breadcrumb -->
 
                                 <div class='nav-search' id='nav-search'>
@@ -472,10 +472,10 @@ $pageProfile="
 
                                 <div class='page-header'>
                                     <h1>
-                                        $pageData->contenttitle
+                                        $pageConfig->contenttitle
                                         <small>
                                             <i class='ace-icon fa fa-angle-double-right'></i>
-                                            $pageData->pageoverview
+                                            $pageConfig->pageoverview
                                         </small>
                                     </h1>
                                 </div><!-- /.page-header -->
@@ -483,7 +483,7 @@ $pageProfile="
                                 <div class='row'>
                                     <div class='col-xs-12'>
                                         <!-- PAGE CONTENT BEGINS -->
-                                        $pageData->pagecontent
+                                        $pageConfig->pagecontent
                                         <!-- PAGE CONTENT ENDS -->
                                     </div><!-- /.col -->
                                 </div><!-- /.row -->
@@ -496,20 +496,20 @@ $pageProfile="
                             <div class='footer-content'>
                                 <span class='bigger-120'>
                                     <span class='blue bolder'>
-                                    $pageData->footcopyright
+                                    $pageConfig->footcopyright
                                 </span>
 
                                 &nbsp; &nbsp;
                                 <span class='action-buttons'>
-                                    <a href='$pageData->twitterurl'>
+                                    <a href='$pageConfig->twitterurl'>
                                         <i class='ace-icon fa fa-twitter-square light-blue bigger-150'></i>
                                     </a>
 
-                                    <a href='$pageData->facebookurl'>
+                                    <a href='$pageConfig->facebookurl'>
                                         <i class='ace-icon fa fa-facebook-square text-primary bigger-150'></i>
                                     </a>
 
-                                    <a href='$pageData->rssurl'>
+                                    <a href='$pageConfig->rssurl'>
                                         <i class='ace-icon fa fa-rss-square orange bigger-150'></i>
                                     </a>
                                 </span>

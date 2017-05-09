@@ -2757,5 +2757,5 @@ $page="
 										</div><!-- /.modal-content -->
 									</div><!-- /.modal-dialog -->
 								</div>";
-$pageData->pagecontent=$page;
+$pageConfig->pagecontent=$page;
 

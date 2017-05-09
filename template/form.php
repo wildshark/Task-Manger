@@ -13,37 +13,37 @@ $page="
 	<head>
 		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
 		<meta charset='utf-8' />
-		<title>$pageData->headertitle</title>
+		<title>$pageConfig->headertitle</title>
 
 		<meta name='description' content='Common form elements and layouts' />
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel='stylesheet' href='$pageData->bootstrap_css' />
-		<link rel='stylesheet' href='$pageData->font_awesome' />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_css' />
+		<link rel='stylesheet' href='$pageConfig->font_awesome' />
 
 		<!-- page specific plugin styles -->
-		<link rel='stylesheet' href='$pageData->jquery_ui_min_css' />
-		<link rel='stylesheet' href='$pageData->jquery_custom_min_css'>
-		<link rel='stylesheet' href='$pageData->css_chosen' />
-		<link rel='stylesheet' href='$pageData->bootstrap_date_picker3_css' />
-		<link rel='stylesheet' href='$pageData->bootstrap_time_picker_css' />
-		<link rel='stylesheet' href='$pageData->date_range_picker_css' />
-		<link rel='stylesheet' href='$pageData->bootstrap_date_time_picker_css' />
-		<link rel='stylesheet' href='$pageData->bootstrap_color_picker_css' />
-		<link rel='stylesheet' href='$pageData->jquery_gritter_min_css'/>
+		<link rel='stylesheet' href='$pageConfig->jquery_ui_min_css' />
+		<link rel='stylesheet' href='$pageConfig->jquery_custom_min_css'>
+		<link rel='stylesheet' href='$pageConfig->css_chosen' />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_date_picker3_css' />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_time_picker_css' />
+		<link rel='stylesheet' href='$pageConfig->date_range_picker_css' />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_date_time_picker_css' />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_color_picker_css' />
+		<link rel='stylesheet' href='$pageConfig->jquery_gritter_min_css'/>
 
 		<!-- text fonts -->
-		<link rel='stylesheet' href='$pageData->google_fonts' />
+		<link rel='stylesheet' href='$pageConfig->google_fonts' />
 
 		<!-- ace styles -->
-		<link rel='stylesheet' href='$pageData->ace_styles' class='ace-main-stylesheet' id='main-ace-style' />
+		<link rel='stylesheet' href='$pageConfig->ace_styles' class='ace-main-stylesheet' id='main-ace-style' />
 
 		<!--[if lte IE 9]>
 			<link rel='stylesheet' href='template/assets/css/ace-part2.min.css' class='ace-main-stylesheet' />
 		<![endif]-->
-		<link rel='stylesheet' href='$pageData->aceskins_style_sheet' />
-		<link rel='stylesheet' href='$pageData->acertl_style_sheet' />
+		<link rel='stylesheet' href='$pageConfig->aceskins_style_sheet' />
+		<link rel='stylesheet' href='$pageConfig->acertl_style_sheet' />
 
 		<!--[if lte IE 9]>
 		  <link rel='stylesheet' href='template/assets/css/ace-ie.min.css' />
@@ -52,7 +52,7 @@ $page="
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src='$pageData->ace_setting_handler'></script>
+		<script src='$pageConfig->ace_setting_handler'></script>
 
 		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 
@@ -76,10 +76,10 @@ $page="
 				</button>
 
 				<div class='navbar-header pull-left'>
-					<a href='$pageData->url_dashboard' class='navbar-brand'>
+					<a href='$pageConfig->url_dashboard' class='navbar-brand'>
 						<small>
 							<i class='fa fa-leaf'></i>
-							    $pageData->dashboardtitle
+							    $pageConfig->dashboardtitle
 						</small>
 					</a>
 				</div>
@@ -247,7 +247,7 @@ $page="
 									<ul class='dropdown-menu dropdown-navbar'>
 										<li>
 											<a href='#' class='clearfix'>
-												<img src='$pageData->avatar' class='msg-photo' alt='$pageData->altName' />
+												<img src='$pageConfig->avatar1' class='msg-photo' alt='$pageConfig->altName' />
 												<span class='msg-body'>
 													<span class='msg-title'>
 														<span class='blue'>Alex:</span>
@@ -264,7 +264,7 @@ $page="
 
 										<li>
 											<a href='#' class='clearfix'>
-												<img src='$pageData->avatar3' class='msg-photo' alt='$pageData->altName' />
+												<img src='$pageConfig->avatar13' class='msg-photo' alt='$pageConfig->altName' />
 												<span class='msg-body'>
 													<span class='msg-title'>
 														<span class='blue'>Susan:</span>
@@ -293,10 +293,10 @@ $page="
 
 						<li class='light-blue dropdown-modal'>
 							<a data-toggle='dropdown' href='#' class='dropdown-toggle'>
-								<img class='nav-user-photo' src='$pageData->userimages' alt='$pageData->altName' />
+								<img class='nav-user-photo' src='$pageConfig->userimages' alt='$pageConfig->altName' />
 								<span class='user-info'>
-									<small>$pageData->welcomelabel</small>
-									$pageData->usernamelabel
+									<small>$pageConfig->welcomelabel</small>
+									$pageConfig->usernamelabel
 								</span>
 
 								<i class='ace-icon fa fa-caret-down'></i>
@@ -320,7 +320,7 @@ $page="
 								<li class='divider'></li>
 
 								<li>
-									<a href='$pageData->url_logout'>
+									<a href='$pageConfig->url_logout'>
 										<i class='ace-icon fa fa-power-off'></i>
 										Logout
 									</a>
@@ -373,7 +373,7 @@ $page="
 				</div><!-- /.sidebar-shortcuts -->
 				<!--widgets menu bar-->
 
-                    $pageData->pagewidgets
+                    $pageConfig->pagewidgets
 
 				<!-- /.Widget menu bar-list -->
 
@@ -390,7 +390,7 @@ $page="
 								<i class='ace-icon fa fa-home home-icon'></i>
 								<a href='#'>Home</a>
 							</li>
-							<li class='active'>$pageData->activepage</li>
+							<li class='active'>$pageConfig->activepage</li>
 						</ul><!-- /.breadcrumb -->
 
 						<div class='nav-search' id='nav-search'>
@@ -473,10 +473,10 @@ $page="
 
 						<div class='page-header'>
 							<h1>
-								$pageData->contenttitle
+								$pageConfig->contenttitle
 								<small>
 								    <i class='ace-icon fa fa-angle-double-right'></i>
-									$pageData->pageoverview
+									$pageConfig->pageoverview
 								</small>
 							</h1>
 						</div><!-- /.page-header -->
@@ -486,9 +486,9 @@ $page="
 								<!-- PAGE CONTENT BEGINS -->
 
 								 <div>
-								    $pageData->pagewarming
+								    $pageConfig->pagewarming
 								 </div>
-								 $pageData->pagecontent
+								 $pageConfig->pagecontent
 
 								<!-- PAGE CONTENT ENDS -->
 							</div><!-- /.col -->
@@ -502,20 +502,20 @@ $page="
 					<div class='footer-content'>
 						<span class='bigger-120'>
 							<span class='blue bolder'>
-							    $pageData->footcopyright
+							    $pageConfig->footcopyright
 						</span>
 
 						&nbsp; &nbsp;
 						<span class='action-buttons'>
-							<a href='$pageData->twitterurl'>
+							<a href='$pageConfig->twitterurl'>
 								<i class='ace-icon fa fa-twitter-square light-blue bigger-150'></i>
 							</a>
 
-							<a href='$pageData->facebookurl'>
+							<a href='$pageConfig->facebookurl'>
 								<i class='ace-icon fa fa-facebook-square text-primary bigger-150'></i>
 							</a>
 
-							<a href='$pageData->rssurl'>
+							<a href='$pageConfig->rssurl'>
 								<i class='ace-icon fa fa-rss-square orange bigger-150'></i>
 							</a>
 						</span>
@@ -531,43 +531,43 @@ $page="
 		<!-- basic scripts -->
 
 		<!--[if !IE]> -->
-		<script src='$pageData->jquery'></script>
+		<script src='$pageConfig->jquery'></script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
 <script src='template/assets/js/jquery-1.11.3.min.js'></script>
 <![endif]-->
-		<script src='$pageData->js_mobile'></script>
-		<script src='$pageData->bootstrap'></script>
+		<script src='$pageConfig->js_mobile'></script>
+		<script src='$pageConfig->bootstrap'></script>
 
 		<!-- page specific plugin scripts -->
 
 		<!--[if lte IE 8]>
 		  <script src='template/assets/js/excanvas.min.js'></script>
 		<![endif]-->
-		<script src='$pageData->jquery_ui_custom_min'></script>
-		<script src='$pageData->jquery_ui_touch_punch_min'></script>
-		<script src='$pageData->chosen_jquery_min'></script>
-		<script src='$pageData->spin_box'></script>
-		<script src='$pageData->bootstrap_date_picker'></script>
-		<script src='$pageData->bootstrap_time_picker'></script>
-		<script src='$pageData->moment'></script>
-		<script src='$pageData->date_range_picker_css'></script>
-		<script src='$pageData->bootstrap_date_time_picker_css'></script>
-		<script src='$pageData->bootstrap_color_picker_css'></script>
-		<script src='$pageData->jquery_knob_min'></script>
-		<script src='$pageData->autosize_min'></script>
-		<script src='$pageData->jquery_input_limiter_min'></script>
-		<script src='$pageData->jquery_masked_input_min'></script>
-		<script src='$pageData->bootstrap_tag'></script>
+		<script src='$pageConfig->jquery_ui_custom_min'></script>
+		<script src='$pageConfig->jquery_ui_touch_punch_min'></script>
+		<script src='$pageConfig->chosen_jquery_min'></script>
+		<script src='$pageConfig->spin_box'></script>
+		<script src='$pageConfig->bootstrap_date_picker'></script>
+		<script src='$pageConfig->bootstrap_time_picker'></script>
+		<script src='$pageConfig->moment'></script>
+		<script src='$pageConfig->date_range_picker_css'></script>
+		<script src='$pageConfig->bootstrap_date_time_picker_css'></script>
+		<script src='$pageConfig->bootstrap_color_picker_css'></script>
+		<script src='$pageConfig->jquery_knob_min'></script>
+		<script src='$pageConfig->autosize_min'></script>
+		<script src='$pageConfig->jquery_input_limiter_min'></script>
+		<script src='$pageConfig->jquery_masked_input_min'></script>
+		<script src='$pageConfig->bootstrap_tag'></script>
 
 		<!-- ace scripts -->
-		<script src='$pageData->ace_elements'></script>
-		<script src='$pageData->ace'></script>
+		<script src='$pageConfig->ace_elements'></script>
+		<script src='$pageConfig->ace'></script>
 
 		<!-- inline scripts related to this page -->
-<script src='$pageData->js_forms'></script>
+<script src='$pageConfig->js_forms'></script>
 	</body>
 </html>";
 echo $page;

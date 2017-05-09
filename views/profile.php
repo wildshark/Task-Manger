@@ -1946,4 +1946,4 @@ $page_profile="
 									</div><!-- /.user-profile -->
 								</div>
 ";
-$pageData->pagecontent=$page_profile;
+$pageConfig->pagecontent=$page_profile;

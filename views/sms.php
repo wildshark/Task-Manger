@@ -45,4 +45,4 @@ $pageSMS="
         </div>
         <div class='col-sm-6'>
         </div>";
-$pageData->pagecontent= $pageSMS;
+$pageConfig->pagecontent= $pageSMS;

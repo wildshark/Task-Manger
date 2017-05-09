@@ -8,7 +8,7 @@
 
 //Page content for page 404 ERROR
 
-$pageData->pagecontent="
+$pageConfig->pagecontent="
                                 <div class=\"error-container\">
 									<div class=\"well\">
 										<h1 class=\"grey lighter smaller\">
@@ -57,12 +57,12 @@ $pageData->pagecontent="
 										<div class=\"space\"></div>
 
 										<div class=\"center\">
-											<a href=\"$pageData->url_page_go_back\" class=\"btn btn-grey\">
+											<a href=\"$pageConfig->url_page_go_back\" class=\"btn btn-grey\">
 												<i class=\"ace-icon fa fa-arrow-left\"></i>
 												Go Back
 											</a>
 
-											<a href=\"$pageData->url_dashboard\" class=\"btn btn-primary\">
+											<a href=\"$pageConfig->url_dashboard\" class=\"btn btn-primary\">
 												<i class=\"ace-icon fa fa-tachometer\"></i>
 												Dashboard
 											</a>

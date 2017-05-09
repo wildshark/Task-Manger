@@ -14,8 +14,8 @@ session_start();
          *get full name and image and display it on
          * the template dashboard
          */
-        $pageData->usernamelabel=$_SESSION['FullName'];
-        $pageData->userimages=$_SESSION['photo'];
+        $pageConfig->usernamelabel=$_SESSION['FullName'];
+        $pageConfig->userimages=$_SESSION['photo'];
     }
 
         // die("Login is required <br> <a href='../login.php'>login</a> "); //"Login required." );

@@ -14,38 +14,38 @@ include "config.url.php";
 
 //Program Title
 $company_name="iQuipe";
-$pageData->headertitle="Account";
-$pageData->dashboardtitle="Task Manager";
+$pageConfig->headertitle="Account";
+$pageConfig->dashboardtitle="Task Manager";
 
 //User Label
-$pageData->welcomelabel="welcome,";
-$pageData->usernamelabel="username";
+$pageConfig->welcomelabel="welcome,";
+$pageConfig->usernamelabel="username";
 
 //body content
-$pageData->activepage="name of page";
-$pageData->contenttitle="Dashboard test";
-$pageData->pageoverview="overview &amp; stats";
-$pageData->pagecontent="test";
+$pageConfig->activepage="name of page";
+$pageConfig->contenttitle="Dashboard test";
+$pageConfig->pageoverview="overview &amp; stats";
+$pageConfig->pagecontent="test";
 
 //footer copyright.
 //include </span> after the company's name
 
-$pageData->footcopyright="Company Name</span> Application &copy; 2013-2014";
+$pageConfig->footcopyright="Company Name</span> Application &copy; 2013-2014";
 
 //Image file Path
-$pageData->altName="Susan's Avatar";
-$pageData->userimages="upload/avatar4.png";
-$pageData->avatar="template/assets/images/avatars/avatar.png";
-$pageData->avatar3="template/assets/images/avatars/avatar3.png";
-$pageData->avatar4="template/assets/images/avatars/avatar4.png";
+$pageConfig->altName="Susan's Avatar";
+$pageConfig->userimages="upload/avatar4.png";
+$pageConfig->avatar1="template/assets/images/avatars/avatar.png";
+$pageConfig->avatar2="template/assets/images/avatars/avatar3.png";
+$pageConfig->avatar3="template/assets/images/avatars/avatar4.png";
 
 //href for social network
 //twitter
-$pageData->twitterurl="#";
+$pageConfig->twitterurl="#";
 //face book
-$pageData->facebookurl="#";
+$pageConfig->facebookurl="#";
 //RSS
-$pageData->rssurl="#";
+$pageConfig->rssurl="#";
 
 
 

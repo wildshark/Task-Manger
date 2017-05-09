@@ -11,10 +11,10 @@
  *      In creating a page the order start with the below list eg
  *      include_once"config/config.php";
  *      include_once"template/widgets.php";
- *      $pageData->headertitle=$load_page;
- *      $pageData->contenttitle=$load_page;
- *      $pageData->css="";
- *      $pageData->pagewarming="";
+ *      $pageConfig->headertitle=$load_page;
+ *      $pageConfig->contenttitle=$load_page;
+ *      $pageConfig->css="";
+ *      $pageConfig->pagewarming="";
  *
  *      $pageLogout=include_once "template/default.php";
  *      echo $pageLogout;. config.php
@@ -48,8 +48,8 @@ $warming_page=$_GET['success'];
 						</strong>
 						    	You successfully read this important alert message.
 								<br />";
-            $pageData->css = $css;
-            $pageData->pagewarming = $pageWarming;
+            $pageConfig->css = $css;
+            $pageConfig->pagewarming = $pageWarming;
         } else {
             $css = "alert alert-danger";
             $pageWarming = "
@@ -62,8 +62,8 @@ $warming_page=$_GET['success'];
 						</strong>
 								Change a few things up and try submitting again.
 								<br />";
-            $pageData->css = $css;
-            $pageData->pagewarming = $pageWarming;
+            $pageConfig->css = $css;
+            $pageConfig->pagewarming = $pageWarming;
         }
 
 
@@ -73,9 +73,9 @@ $warming_page=$_GET['success'];
  *       Start with config.php and next session.php
  *               include_once"module/session.php";
                 include_once "module/logout.php";
-                $pageData->headertitle = "Qua Account";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "Qua Account";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/login.php";
                 echo $page;
@@ -86,9 +86,9 @@ $warming_page=$_GET['success'];
                 include_once"config/config.php";
                 include_once"module/session.php";
                 include_once "module/logout.php";
-                $pageData->headertitle = "Qua Account";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "Qua Account";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/login.php";
                 echo $page;
@@ -98,9 +98,9 @@ $warming_page=$_GET['success'];
                 include_once"config/config.php";
                 include_once "module/login.php";
                 include_once"module/session.php";
-                $pageData->headertitle = "Qua Account";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "Qua Account";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/login.php";
                 echo $page;
@@ -112,11 +112,11 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/chat.php";
-                $pageData->headertitle = "Chat";
-                $pageData->contenttitle = "Chat room";
-                $pageData->pageoverview="Send short messages";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "Chat";
+                $pageConfig->contenttitle = "Chat room";
+                $pageConfig->pageoverview="Send short messages";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/form.php";
                 echo $page;
@@ -128,11 +128,11 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/test.php";
-                $pageData->headertitle = "SMS";
-                $pageData->contenttitle = "SMS Alert";
-                $pageData->pageoverview="Send short messages";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "SMS";
+                $pageConfig->contenttitle = "SMS Alert";
+                $pageConfig->pageoverview="Send short messages";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/table.php";
                 echo $page;
@@ -144,11 +144,11 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/sms.php";
-                $pageData->headertitle = "SMS";
-                $pageData->contenttitle = "SMS Alert";
-                $pageData->pageoverview="Send short messages";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "SMS";
+                $pageConfig->contenttitle = "SMS Alert";
+                $pageConfig->pageoverview="Send short messages";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/form.php";
                 echo $page;
@@ -160,11 +160,11 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/addtask.php";
-                $pageData->headertitle = "Task";
-                $pageData->contenttitle = "Task";
-                $pageData->pageoverview="Things to do today";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "Task";
+                $pageConfig->contenttitle = "Task";
+                $pageConfig->pageoverview="Things to do today";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/form.php";
                 echo $page;
@@ -176,10 +176,10 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/profile.php";
-                $pageData->headertitle = "profile";
-                $pageData->contenttitle = "Profile";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "profile";
+                $pageConfig->contenttitle = "Profile";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/profile.php";
                 echo $page;
@@ -192,10 +192,10 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/dashboard.php";
-                $pageData->headertitle = "Dashboard";
-                $pageData->contenttitle = "Dashboard";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "Dashboard";
+                $pageConfig->contenttitle = "Dashboard";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/form.php";
                 echo $page;
@@ -209,10 +209,10 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "template/error404.php";
-                $pageData->headertitle = "404 Error - Que";
-                $pageData->contenttitle = "Page Error";
-                $pageData->css = "";
-                $pageData->pagewarming = "";
+                $pageConfig->headertitle = "404 Error - Que";
+                $pageConfig->contenttitle = "Page Error";
+                $pageConfig->css = "";
+                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/default.php";
                 echo $page;
