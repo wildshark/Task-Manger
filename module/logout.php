@@ -8,5 +8,6 @@
 
 //Destroy all session and
 //and load my login page
-
+include_once "db/db.php";
+$conn->close();
 session_destroy();

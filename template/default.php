@@ -263,7 +263,7 @@ $pageIndex="
 
 										<li>
 											<a href='#' class='clearfix'>
-												<img src='$pageConfig->avatar13' class='msg-photo' alt='$pageConfig->altName' />
+												<img src='$pageConfig->avatar1' class='msg-photo' alt='$pageConfig->altName' />
 												<span class='msg-body'>
 													<span class='msg-title'>
 														<span class='blue'>Susan:</span>
@@ -310,7 +310,7 @@ $pageIndex="
 								</li>
 
 								<li>
-									<a href='#'>
+									<a href='$pageConfig->url_profile'>
 										<i class='ace-icon fa fa-user'></i>
 										Profile
 									</a>
@@ -482,6 +482,9 @@ $pageIndex="
 
 						<div class='row'>
 							<div class='col-xs-12'>
+							    <div class='$pageConfig->css'>
+                                    $pageConfig->pagewarming
+                                </div>
 								<!-- PAGE CONTENT BEGINS -->
 
 								 $pageConfig->pagecontent

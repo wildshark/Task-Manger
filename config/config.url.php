@@ -19,4 +19,5 @@ $pageConfig->url_achieved_task="navigation.php?page=achieved&success";
 $pageConfig->url_pending_task="navigation.php?page=pending&success";
 $pageConfig->url_sms_alert="navigation.php?page=sms&success";
 $pageConfig->url_chat="navigation.php?page=chat&success";
+
 //File Path

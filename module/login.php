@@ -10,6 +10,9 @@ include_once"../db/db.php";
 session_start();
 $username=$_GET['user_name'];
 $password=$_GET['user_password'];
+$checkbox=$_GET['chkBox'];
+
+include_once "../cookie/cookies.php";
 
 $sql="SELECT * FROM user_account WHERE StatusID='2' AND UserName='$username' AND Passwd='$password'";
 $result=$conn->query($sql);
@@ -24,7 +27,7 @@ if (!$row= $result->fetch_assoc()){
     */
     $userID=$row['userID'];
     $fullName=$row['FullName'];
-    $userEmail=$row['email'];
+    $userEmail=$row['Email'];
     $userPath=$row['Path'];
     $_SESSION['username']=$username;
     $_SESSION['password']=$password;

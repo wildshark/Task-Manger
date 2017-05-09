@@ -57,4 +57,6 @@
     //form-jQuery UI
     $pageConfig->jquery_ui_min_css="template/assets/css/jquery-ui.min.css";
     $pageConfig->jquery_custom_min_css="template/assets/css/jquery-ui.custom.min.css";
+    $pageConfig->ace_part2_min_css="template/assets/css/ace-part2.min.css";
 
+    $pageConfig->ace_is_min_css="template/assets/css/ace-ie.min.css";

@@ -12,109 +12,130 @@
       <table id="3" parent="1" name="user_task"/>
       <table id="4" parent="1" name="sms"/>
       <table id="5" parent="1" name="timetable"/>
-      <column id="6" parent="2" name="userID">
+      <table id="6" parent="1" name="messager"/>
+      <column id="7" parent="2" name="userID">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="7" parent="2" name="FullName">
+      <column id="8" parent="2" name="FullName">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="8" parent="2" name="UserName">
+      <column id="9" parent="2" name="UserName">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="9" parent="2" name="Passwd">
+      <column id="10" parent="2" name="Passwd">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="10" parent="2" name="Email">
+      <column id="11" parent="2" name="Email">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="11" parent="2" name="Path">
+      <column id="12" parent="2" name="Path">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="12" parent="2" name="StatusID">
+      <column id="13" parent="2" name="StatusID">
         <data-type>int(11)</data-type>
         <default-expression>&apos;1&apos;</default-expression>
       </column>
-      <key id="13" parent="2" name="PRIMARY">
+      <key id="14" parent="2" name="PRIMARY">
         <columns>userID</columns>
         <primary>1</primary>
       </key>
-      <column id="14" parent="3" name="taskID">
+      <column id="15" parent="3" name="taskID">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="15" parent="3" name="taskDate">
+      <column id="16" parent="3" name="taskDate">
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="16" parent="3" name="Assign_to">
+      <column id="17" parent="3" name="Assign_to">
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="17" parent="3" name="Priority">
+      <column id="18" parent="3" name="Priority">
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="18" parent="3" name="DueDate">
+      <column id="19" parent="3" name="DueDate">
         <data-type>varchar(20)</data-type>
       </column>
-      <column id="19" parent="3" name="Note">
+      <column id="20" parent="3" name="Note">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="20" parent="3" name="Assign_from">
+      <column id="21" parent="3" name="Assign_from">
         <data-type>varchar(50)</data-type>
       </column>
-      <column id="21" parent="3" name="createDate">
+      <column id="22" parent="3" name="createDate">
         <data-type>varchar(20)</data-type>
       </column>
-      <key id="22" parent="3" name="PRIMARY">
+      <key id="23" parent="3" name="PRIMARY">
         <columns>taskID</columns>
         <primary>1</primary>
       </key>
-      <column id="23" parent="4" name="msgID">
+      <column id="24" parent="4" name="msgID">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="24" parent="4" name="sms_from">
+      <column id="25" parent="4" name="sms_from">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="25" parent="4" name="sms_to">
+      <column id="26" parent="4" name="sms_to">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="26" parent="4" name="sms_message">
+      <column id="27" parent="4" name="sms_message">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="27" parent="4" name="send_date">
+      <column id="28" parent="4" name="send_date">
         <data-type>varchar(255)</data-type>
       </column>
-      <key id="28" parent="4" name="PRIMARY">
+      <key id="29" parent="4" name="PRIMARY">
         <columns>msgID</columns>
         <primary>1</primary>
       </key>
-      <column id="29" parent="5" name="timeID">
+      <column id="30" parent="5" name="timeID">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
       </column>
-      <column id="30" parent="5" name="Day">
+      <column id="31" parent="5" name="Day">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="31" parent="5" name="Subject">
+      <column id="32" parent="5" name="Subject">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="32" parent="5" name="Duration">
+      <column id="33" parent="5" name="Duration">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="33" parent="5" name="StartTime">
+      <column id="34" parent="5" name="StartTime">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="34" parent="5" name="EndTime">
+      <column id="35" parent="5" name="EndTime">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="35" parent="5" name="School">
+      <column id="36" parent="5" name="School">
         <data-type>varchar(255)</data-type>
       </column>
-      <column id="36" parent="5" name="Level">
+      <column id="37" parent="5" name="Level">
         <data-type>varchar(255)</data-type>
       </column>
-      <key id="37" parent="5" name="PRIMARY">
+      <key id="38" parent="5" name="PRIMARY">
         <columns>timeID</columns>
+        <primary>1</primary>
+      </key>
+      <column id="39" parent="6" name="messageID">
+        <mandatory>1</mandatory>
+        <data-type>int(11)</data-type>
+      </column>
+      <column id="40" parent="6" name="userTo">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="41" parent="6" name="userForm">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <column id="42" parent="6" name="userMessager">
+        <data-type>varchar(255)</data-type>
+      </column>
+      <column id="43" parent="6" name="createDate">
+        <data-type>varchar(50)</data-type>
+      </column>
+      <key id="44" parent="6" name="PRIMARY">
+        <columns>messageID</columns>
         <primary>1</primary>
       </key>
     </database-model>

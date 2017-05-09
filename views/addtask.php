@@ -74,11 +74,10 @@ $page_new_task="
                     </div>
 
                     <div class='form-group'>
-                        <button type='submit' class='btn btn-primary no-border'>
-                            <i class='ace-icon fa fa-tasks align-top bigger-125'></i>
+                        <button type='submit' class='btn btn-sm btn-primary'>
+                            <i class='ace-icon fa fa-comment-o  align-top bigger-125'></i>
                             Submit Task
                         </button>
-
                     </div>
 				</form>
     </div>

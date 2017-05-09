@@ -67,6 +67,16 @@ $pageConfig->pagewidgets="
 							</li>
 						</ul>
 					</li>
+					
+					<li class=''>
+						<a href='$pageConfig->url_chat'>
+							<i class='menu-icon fa fa-comments'></i>
+							<span class='menu-text'> Chat </span>
+						</a>
+
+						<b class='arrow'></b>
+					</li>
+					
 					<li class=''>
 						<a href='$pageConfig->url_sms_alert'>
 							<i class='menu-icon fa fa-envelope'></i>
@@ -75,22 +85,15 @@ $pageConfig->pagewidgets="
 
 						<b class='arrow'></b>
 					</li>
-
+					
 					<li class=''>
 						<a href='$pageConfig->url_profile'>
-							<i class='menu-icon fa fa-list-alt'></i>
+							<i class='menu-icon fa fa-users'></i>
 							<span class='menu-text'> Profile </span>
 						</a>
 
 						<b class='arrow'></b>
 					</li>
 
-					<li class=''>
-						<a href='$pageConfig->url_chat'>
-							<i class='menu-icon fa fa-list-alt'></i>
-							<span class='menu-text'> Chat </span>
-						</a>
-
-						<b class='arrow'></b>
-					</li>
+					
 				</ul>";

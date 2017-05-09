@@ -14,46 +14,46 @@ $pageProfile="
 		<meta charset='utf-8' />
 		<title>$pageConfig->headertitle</title>
 
-		<meta name=\"description\" content=\"3 styles with inline editable feature\" />
-		<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0, maximum-scale=1.0\" />
+		<meta name='description' content='3 styles with inline editable feature' />
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel=\"stylesheet\" href=\"template/assets/css/bootstrap.min.css\" />
-		<link rel=\"stylesheet\" href=\"template/assets/font-awesome/4.5.0/css/font-awesome.min.css\" />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_css' />
+		<link rel='stylesheet' href='$pageConfig->font_awesome' />
 
 		<!-- page specific plugin styles -->
-		<link rel=\"stylesheet\" href=\"template/assets/css/jquery-ui.custom.min.css\" />
-		<link rel=\"stylesheet\" href=\"template/assets/css/jquery.gritter.min.css\" />
-		<link rel=\"stylesheet\" href=\"template/assets/css/select2.min.css\" />
-		<link rel=\"stylesheet\" href=\"template/assets/css/bootstrap-datepicker3.min.css\" />
-		<link rel=\"stylesheet\" href=\"template/assets/css/bootstrap-editable.min.css\" />
+		<link rel='stylesheet' href='$pageConfig->jquery_custom_min_css' />
+		<link rel='stylesheet' href='$pageConfig->jquery_gritter_min_css' />
+		<link rel='stylesheet' href='$pageConfig->select2_min_css' />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_date_picker3_css' />
+		<link rel='stylesheet' href='$pageConfig->bootstrap_editable_min_css' />
 
 		<!-- text fonts -->
-		<link rel=\"stylesheet\" href=\"template/assets/css/fonts.googleapis.com.css\" />
+		<link rel='stylesheet' href='$pageConfig->google_fonts' />
 
 		<!-- ace styles -->
-		<link rel=\"stylesheet\" href=\"template/assets/css/ace.min.css\" class=\"ace-main-stylesheet\" id=\"main-ace-style\" />
+		<link rel='stylesheet' href='$pageConfig->ace_styles' class='ace-main-stylesheet' id='main-ace-style' />
 
 		<!--[if lte IE 9]>
-			<link rel=\"stylesheet\" href=\"template/assets/css/ace-part2.min.css\" class=\"ace-main-stylesheet\" />
+			<link rel='stylesheet' href='$pageConfig->ace_part2_min_css' class='ace-main-stylesheet' />
 		<![endif]-->
-		<link rel=\"stylesheet\" href=\"template/assets/css/ace-skins.min.css\" />
-		<link rel=\"stylesheet\" href=\"template/assets/css/ace-rtl.min.css\" />
+		<link rel='stylesheet' href='$pageConfig->aceskins_style_sheet' />
+		<link rel='stylesheet' href='$pageConfig->acertl_style_sheet' />
 
 		<!--[if lte IE 9]>
-		  <link rel=\"stylesheet\" href=\"template/assets/css/ace-ie.min.css\" />
+		  <link rel='stylesheet' href='$pageConfig->ace_is_min_css' />
 		<![endif]-->
 
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src=\"template/assets/js/ace-extra.min.js\"></script>
+		<script src='$pageConfig->ace_setting_handler'></script>
 
 		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 
 		<!--[if lte IE 8]>
-		<script src=\"template/assets/js/html5shiv.min.js\"></script>
-		<script src=\"template/assets/js/respond.min.js\"></script>
+		<script src='$pageConfig->html5_shiv_min'></script>
+		<script src='$pageConfig->respond_min'></script>
 		<![endif]-->
 	</head>
         <body class='no-skin'>
@@ -258,7 +258,7 @@ $pageProfile="
 
                                                 <li>
                                                     <a href='#' class='clearfix'>
-                                                        <img src='$pageConfig->avatar13' class='msg-photo' alt='$pageConfig->altName' />
+                                                        <img src='$pageConfig->avatar2' class='msg-photo' alt='$pageConfig->altName' />
                                                         <span class='msg-body'>
                                                             <span class='msg-title'>
                                                                 <span class='blue'>Susan:</span>
@@ -305,7 +305,7 @@ $pageProfile="
                                         </li>
 
                                         <li>
-                                            <a href='profile.html'>
+                                            <a href='$pageConfig->url_profile'>
                                                 <i class='ace-icon fa fa-user'></i>
                                                 Profile
                                             </a>
@@ -482,6 +482,9 @@ $pageProfile="
 
                                 <div class='row'>
                                     <div class='col-xs-12'>
+                                        <div class='$pageConfig->css'>
+                                            $pageConfig->pagewarming
+                                        </div>
                                         <!-- PAGE CONTENT BEGINS -->
                                         $pageConfig->pagecontent
                                         <!-- PAGE CONTENT ENDS -->
@@ -525,40 +528,40 @@ $pageProfile="
 	<!-- basic scripts -->
 
 		<!--[if !IE]> -->
-		<script src=\"template/assets/js/jquery-2.1.4.min.js\"></script>
+		<script src='$pageConfig->jquery'></script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
-<script src=\"template/assets/js/jquery-1.11.3.min.js\"></script>
+<script src='$pageConfig->jquery_1'></script>
 <![endif]-->
-		<script type=\"text/javascript\">
-			if('ontouchstart' in document.documentElement) document.write(\"<script src='assets/js/jquery.mobile.custom.min.js'>\"+\"<\"+\"/script>\");
+		<script type='text/javascript'>
+			if('ontouchstart' in document.documentElement) document.write('<script src='assets/js/jquery.mobile.custom.min.js'>'+'<'+'/script>');
 		</script>
-		<script src=\"template/assets/js/bootstrap.min.js\"></script>
+		<script src='template/assets/js/bootstrap.min.js'></script>
 
 		<!-- page specific plugin scripts -->
 
 		<!--[if lte IE 8]>
-		  <script src=\"template/assets/js/excanvas.min.js\"></script>
+		  <script src='$pageConfig->excanvas_min'></script>
 		<![endif]-->
-		<script src=\"template/assets/js/jquery-ui.custom.min.js\"></script>
-		<script src=\"template/assets/js/jquery.ui.touch-punch.min.js\"></script>
-		<script src=\"template/assets/js/jquery.gritter.min.js\"></script>
-		<script src=\"template/assets/js/bootbox.js\"></script>
-		<script src=\"template/assets/js/jquery.easypiechart.min.js\"></script>
-		<script src=\"template/assets/js/bootstrap-datepicker.min.js\"></script>
-		<script src=\"template/assets/js/jquery.hotkeys.index.min.js\"></script>
-		<script src=\"template/assets/js/bootstrap-wysiwyg.min.js\"></script>
-		<script src=\"template/assets/js/select2.min.js\"></script>
-		<script src=\"template/assets/js/spinbox.min.js\"></script>
-		<script src=\"template/assets/js/bootstrap-editable.min.js\"></script>
-		<script src=\"template/assets/js/ace-editable.min.js\"></script>
-		<script src=\"template/assets/js/jquery.maskedinput.min.js\"></script>
+		<script src='$pageConfig->jquery_ui_custom_min'></script>
+		<script src='$pageConfig->jquery_ui_touch_punch_min'></script>
+		<script src='$pageConfig->jquery_gritter_min'></script>
+		<script src='$pageConfig->boot_box'></script>
+		<script src='$pageConfig->easy_pie_chart_min'></script>
+		<script src='$pageConfig->bootstrap_date_picker'></script>
+		<script src='$pageConfig->jquery_hotkeys_index_min'></script>
+		<script src='$pageConfig->bootstrap_wysiwyg_min'></script>
+		<script src='$pageConfig->select2_min'></script>
+		<script src='$pageConfig->spin_box'></script>
+		<script src='$pageConfig->bootstrap_editable_min'></script>
+		<script src='$pageConfig->ace_editable_min'></script>
+		<script src='$pageConfig->jquery_masked_input_min'></script>
 
 		<!-- ace scripts -->
-		<script src=\"template/assets/js/ace-elements.min.js\"></script>
-		<script src=\"template/assets/js/ace.min.js\"></script>
+		<script src='$pageConfig->ace_elements'></script>
+		<script src='$pageConfig->ace'></script>
 
 	</body>
 </html>";

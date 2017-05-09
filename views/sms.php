@@ -14,7 +14,7 @@ $pageSMS="
                     <label  class='col-sm-2 control-label no-padding-right' for='form-field-1'>Receiver's Mobile</label>
 
                     <div class='col-sm-8'>
-                       <input name='receiver'  type='text' id='form-field-8' class='col-xs-10 col-sm-10' placeholder='Receiver's mobile number'>
+                       <input name='receiver'  type='text' id='form-field-8' class='col-xs-10 col-sm-10' placeholder='Receiver mobile number'>
                     </div>
                 </div>
 
@@ -35,14 +35,24 @@ $pageSMS="
                 </div>
 
                 <div class='form-group'>
-                    <button type='submit' class='btn btn-primary no-border'>
-                       <i class='ace-icon fa fa-tasks align-top bigger-125'></i>
-                       Submit Task
+                    <button type='submit' class='btn btn-sm btn-primary '>
+                       <i class='ace-icon fa fa-envelope align-top bigger-125'></i>
+                       Send SMS
                     </button>
-
                 </div>
             </form>
         </div>
         <div class='col-sm-6'>
-        </div>";
+           <h3 class='header smaller lighter red'>Task Wells</h3>
+                <div class='well'>
+                    <h4 class='green smaller lighter'>Normal Well</h4>
+                    Use the well as a simple effect on an element to give it an inset effect.
+                </div>
+        </div>
+        
+        <div class='col-sm-6 center'>
+			<div class=\"progress progress-striped active\">
+													<div class=\"progress-bar progress-bar-yellow\" style=\"width: 60%\"></div>
+												</div>
+		</div>";
 $pageConfig->pagecontent= $pageSMS;

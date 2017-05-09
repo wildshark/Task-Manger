@@ -91,7 +91,7 @@ $pageLogin="
 
                                             <div class='clearfix'>
                                                 <label class='inline'>
-                                                    <input type='checkbox' class='ace' />
+                                                    <input name='chkBox' type='checkbox' class='ace' value='1'/>
                                                     <span class='lbl'> Remember Me</span>
                                                 </label>
 
@@ -206,6 +206,10 @@ $pageLogin="
                                             </label>
                                             <label class='block clearfix'>
 														<span class='block input-icon input-icon-right'>
+															<input name='dept' type='text' class='form-control' placeholder='Department' />
+															<i class='ace-icon fa fa-globe'></i>												</span>
+                                            </label>
+                                            <label class='block clearfix'>													<span class='block input-icon input-icon-right'>
 															<input name='email' type='email' class='form-control' placeholder='Email' />
 															<i class='ace-icon fa fa-envelope'></i>
 														</span>

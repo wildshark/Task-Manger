@@ -20,15 +20,23 @@ $task=$_GET['task_subject'];
 $priority=$_GET['priority'];
 $dueDate=$_GET['due_date'];
 $note=$_GET['note'];
+$statusID="1";
 
+if (empty($assignTo)){
+    $assignTo=$_SESSION['FullName'];
+}
+
+if (empty($priority)){
+    $priority="1";
+}
 //session
 $assignFrom=$_SESSION['FullName'];
-
+$userid=$_SESSION['userID'];
 //get date and time
 $createDate= date_create('now')->format('d-m-Y H:i:s');
 
-$sql= "INSERT INTO user_task( taskDate,Assign_to,Priority,DueDate,Note,Assign_from,createDate)
-      VALUES ('$date','$assignTo','$priority','$dueDate','$note','$assignFrom','$createDate')";
+$sql= "INSERT INTO user_task( taskDate,Assign_to,Priority,DueDate,Note,Assign_from,createDate,statusID,userID)
+      VALUES ('$date','$assignTo','$priority','$dueDate','$note','$assignFrom','$createDate','$statusID','$userid')";
 
     $result=$conn->query($sql);
 

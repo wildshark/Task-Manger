@@ -34,7 +34,7 @@ $warming_page=$_GET['success'];
 // function to load pages
     function getLoadPage($load_page, $warming_page)
     {
-        $pageData = new stdClass();
+        $pageConfig = new stdClass();
 
         if (!empty($warming_page)) {
             $css = "alert alert-block alert-success";
@@ -50,6 +50,7 @@ $warming_page=$_GET['success'];
 								<br />";
             $pageConfig->css = $css;
             $pageConfig->pagewarming = $pageWarming;
+
         } else {
             $css = "alert alert-danger";
             $pageWarming = "
@@ -64,14 +65,14 @@ $warming_page=$_GET['success'];
 								<br />";
             $pageConfig->css = $css;
             $pageConfig->pagewarming = $pageWarming;
-        }
 
+        }
 
         switch ($load_page) {
 /*
  * Note: to create a page using the includes
  *       Start with config.php and next session.php
- *               include_once"module/session.php";
+ *              include_once"module/session.php";
                 include_once "module/logout.php";
                 $pageConfig->headertitle = "Qua Account";
                 $pageConfig->css = "";
@@ -87,8 +88,6 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "module/logout.php";
                 $pageConfig->headertitle = "Qua Account";
-                $pageConfig->css = "";
-                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/login.php";
                 echo $page;
@@ -99,8 +98,6 @@ $warming_page=$_GET['success'];
                 include_once "module/login.php";
                 include_once"module/session.php";
                 $pageConfig->headertitle = "Qua Account";
-                $pageConfig->css = "";
-                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/login.php";
                 echo $page;
@@ -109,9 +106,10 @@ $warming_page=$_GET['success'];
             case "chat":
 
                 include_once "config/config.php";
-                include_once"module/session.php";
+                include_once "module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/chat.php";
+                $pageConfig->activepage=$load_page;
                 $pageConfig->headertitle = "Chat";
                 $pageConfig->contenttitle = "Chat room";
                 $pageConfig->pageoverview="Send short messages";
@@ -122,17 +120,16 @@ $warming_page=$_GET['success'];
                 echo $page;
                 break;
 
-            case "test":
+            case "view":
 
                 include_once "config/config.php";
-                include_once"module/session.php";
+                include_once "module/session.php";
                 include_once "template/widgets.php";
-                include_once "views/test.php";
-                $pageConfig->headertitle = "SMS";
-                $pageConfig->contenttitle = "SMS Alert";
+                require_once "views/test2.php";
+                $pageConfig->activepage=$load_page;
+                $pageConfig->headertitle = "table";
+                $pageConfig->contenttitle = "table";
                 $pageConfig->pageoverview="Send short messages";
-                $pageConfig->css = "";
-                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/table.php";
                 echo $page;
@@ -144,11 +141,10 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/sms.php";
+                $pageConfig->activepage=$load_page;
                 $pageConfig->headertitle = "SMS";
                 $pageConfig->contenttitle = "SMS Alert";
                 $pageConfig->pageoverview="Send short messages";
-                $pageConfig->css = "";
-                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/form.php";
                 echo $page;
@@ -160,11 +156,10 @@ $warming_page=$_GET['success'];
                 include_once"module/session.php";
                 include_once "template/widgets.php";
                 include_once "views/addtask.php";
+                $pageConfig->activepage=$load_page;
                 $pageConfig->headertitle = "Task";
                 $pageConfig->contenttitle = "Task";
                 $pageConfig->pageoverview="Things to do today";
-                $pageConfig->css = "";
-                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/form.php";
                 echo $page;
@@ -178,8 +173,6 @@ $warming_page=$_GET['success'];
                 include_once "views/profile.php";
                 $pageConfig->headertitle = "profile";
                 $pageConfig->contenttitle = "Profile";
-                $pageConfig->css = "";
-                $pageConfig->pagewarming = "";
 
                 $page = include_once "template/profile.php";
                 echo $page;

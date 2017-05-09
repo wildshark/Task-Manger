@@ -1,8 +1,7 @@
 .main-content,body,html {
 	min-height:100%
 }
-.alert,.well {
-	border-radius:0
+.alert,.well { border-radius:0
 }
 .nav-list>li .submenu>li>a:hover,.nav-list>li>a,a:active,a:focus {
 	text-decoration:none
@@ -9539,7 +9538,7 @@ tr.detail-row>td {
 }
 .progress {
 	box-shadow:none;
-	background:#e9e9e9;
+	background:#555555;
 	height:18px
 }
 .progress-striped .progress-bar,.progress-striped .progress-bar-danger {

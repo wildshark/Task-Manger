@@ -247,7 +247,7 @@ $page="
 									<ul class='dropdown-menu dropdown-navbar'>
 										<li>
 											<a href='#' class='clearfix'>
-												<img src='$pageConfig->avatar1' class='msg-photo' alt='$pageConfig->altName' />
+												<img src='$pageConfig->avatar2' class='msg-photo' alt='$pageConfig->altName' />
 												<span class='msg-body'>
 													<span class='msg-title'>
 														<span class='blue'>Alex:</span>
@@ -264,7 +264,7 @@ $page="
 
 										<li>
 											<a href='#' class='clearfix'>
-												<img src='$pageConfig->avatar13' class='msg-photo' alt='$pageConfig->altName' />
+												<img src='$pageConfig->avatar2' class='msg-photo' alt='$pageConfig->altName' />
 												<span class='msg-body'>
 													<span class='msg-title'>
 														<span class='blue'>Susan:</span>
@@ -311,7 +311,7 @@ $page="
 								</li>
 
 								<li>
-									<a href='#'>
+									<a href='$pageConfig->url_profile'>
 										<i class='ace-icon fa fa-user'></i>
 										Profile
 									</a>
@@ -483,11 +483,11 @@ $page="
 
 						<div class='row'>
 							<div class='col-xs-12'>
+                                <div class='$pageConfig->css'>
+                                    $pageConfig->pagewarming
+                                </div>
 								<!-- PAGE CONTENT BEGINS -->
 
-								 <div>
-								    $pageConfig->pagewarming
-								 </div>
 								 $pageConfig->pagecontent
 
 								<!-- PAGE CONTENT ENDS -->
@@ -561,7 +561,9 @@ $page="
 		<script src='$pageConfig->jquery_input_limiter_min'></script>
 		<script src='$pageConfig->jquery_masked_input_min'></script>
 		<script src='$pageConfig->bootstrap_tag'></script>
-
+		<script src='$pageConfig->boot_box'></script>
+        <script src='$pageConfig->easy_pie_chart_min'></script>
+        <script src='$pageConfig->spin'></script>
 		<!-- ace scripts -->
 		<script src='$pageConfig->ace_elements'></script>
 		<script src='$pageConfig->ace'></script>
