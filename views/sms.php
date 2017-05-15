@@ -55,4 +55,4 @@ $pageSMS="
 													<div class=\"progress-bar progress-bar-yellow\" style=\"width: 60%\"></div>
 												</div>
 		</div>";
-$pageConfig->pagecontent= $pageSMS;
+$pageData->pagecontent= $pageSMS;

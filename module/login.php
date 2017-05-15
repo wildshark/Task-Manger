@@ -8,14 +8,14 @@
 
 include_once"../db/db.php";
 session_start();
-$username=$_GET['user_name'];
-$password=$_GET['user_password'];
-$checkbox=$_GET['chkBox'];
+    $username=$_GET['user_name'];
+    $password=$_GET['user_password'];
+    $checkbox=$_GET['chkBox'];
 
-include_once "../cookie/cookies.php";
+include_once "cookie/cookies.php";
 
-$sql="SELECT * FROM user_account WHERE StatusID='2' AND UserName='$username' AND Passwd='$password'";
-$result=$conn->query($sql);
+    $sql="SELECT * FROM user_account WHERE StatusID='2' AND UserName='$username' AND Passwd='$password'";
+    $result=$conn->query($sql);
 
 if (!$row= $result->fetch_assoc()){
     //if the username and password don't exist load login page

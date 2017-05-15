@@ -7,16 +7,16 @@
  */
     include_once"config/config.php";
     $page=$_GET['page'];
-    $pageConfig->name=$_GET['name'];
-    $pageConfig->password=$_GET['password'];
+    $pageData->name=$_GET['name'];
+    $pageData->password=$_GET['password'];
     if ($page="password"){
 
-        $pageConfig->contenttitle="Retrieve Login Details";
-        $pageConfig->message1="We are excited to have you join us in Ace community";
-        $pageConfig->message2="Please confirm your registration to continue";
-        $pageConfig->button="Login";
+        $pageData->contenttitle="Retrieve Login Details";
+        $pageData->message1="We are excited to have you join us in Ace community";
+        $pageData->message2="Please confirm your registration to continue";
+        $pageData->button="Login";
 
-        $pageConfig->url="index.php";
+        $pageData->url="index.php";
 
         $page= include_once "template/message.php";
         echo $page;

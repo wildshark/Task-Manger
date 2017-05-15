@@ -20,7 +20,7 @@
         $date=$row['createDate'];
         echo"<li>
 			    <a href='#' class='clearfix'>
-			    	<img src='$pageConfig->avatar2' class='msg-photo' alt='$pageConfig->altName' />
+			    	<img src='$pageData->avatar2' class='msg-photo' alt='$pageData->altName' />
 						<span class='msg-body'>
 							<span class='msg-title'>
 								<span class='blue'>$msg_from:</span>

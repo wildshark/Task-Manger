@@ -35,8 +35,8 @@ $userid=$_SESSION['userID'];
 //get date and time
 $createDate= date_create('now')->format('d-m-Y H:i:s');
 
-$sql= "INSERT INTO user_task( taskDate,Assign_to,Priority,DueDate,Note,Assign_from,createDate,statusID,userID)
-      VALUES ('$date','$assignTo','$priority','$dueDate','$note','$assignFrom','$createDate','$statusID','$userid')";
+$sql= "INSERT INTO user_task( taskDate,Assign_to,Subject,Priority,DueDate,Note,Assign_from,createDate,statusID,userID)
+      VALUES ('$date','$assignTo','$task','$priority','$dueDate','$note','$assignFrom','$createDate','$statusID','$userid')";
 
     $result=$conn->query($sql);
 

@@ -6,10 +6,10 @@
  * Time: 10:57 AM
  */
 
-$pageConfig->pagewidgets="
+$pageData->pagewidgets="
                 <ul class='nav nav-list'>
 					<li class='active'>
-						<a href='$pageConfig->url_dashboard'>
+						<a href='$pageData->url_dashboard'>
 							<i class='menu-icon fa fa-tachometer'></i>
 							<span class='menu-text'> Dashboard </span>
 						</a>
@@ -18,7 +18,7 @@ $pageConfig->pagewidgets="
 					</li>
 
 					<li class=''>
-						<a href='$pageConfig->url_add_task'>
+						<a href='$pageData->url_add_task'>
 							<i class='menu-icon fa fa-cogs'></i>
 							<span class='menu-text'> New Task </span>
 						</a>
@@ -40,7 +40,7 @@ $pageConfig->pagewidgets="
 
 						<ul class='submenu'>
 							<li class=''>
-								<a href='$pageConfig->url_all_task'>
+								<a href='$pageData->url_all_task'>
 									<i class='menu-icon fa fa-caret-right'></i>
 									All Task
 								</a>
@@ -49,7 +49,7 @@ $pageConfig->pagewidgets="
 							</li>
 
 							<li class=''>
-								<a href='$pageConfig->url_achieved_task'>
+								<a href='$pageData->url_achieved_task'>
 									<i class='menu-icon fa fa-caret-right'></i>
 									Achieved Task
 								</a>
@@ -58,7 +58,7 @@ $pageConfig->pagewidgets="
 							</li>
 
 							<li class=''>
-								<a href='$pageConfig->url_pending_task'>
+								<a href='$pageData->url_pending_task'>
 									<i class='menu-icon fa fa-caret-right'></i>
 									Pending Task
 								</a>
@@ -69,7 +69,7 @@ $pageConfig->pagewidgets="
 					</li>
 					
 					<li class=''>
-						<a href='$pageConfig->url_chat'>
+						<a href='$pageData->url_chat'>
 							<i class='menu-icon fa fa-comments'></i>
 							<span class='menu-text'> Chat </span>
 						</a>
@@ -78,7 +78,7 @@ $pageConfig->pagewidgets="
 					</li>
 					
 					<li class=''>
-						<a href='$pageConfig->url_sms_alert'>
+						<a href='$pageData->url_sms_alert'>
 							<i class='menu-icon fa fa-envelope'></i>
 							<span class='menu-text'> SMS Alert </span>
 						</a>
@@ -87,7 +87,7 @@ $pageConfig->pagewidgets="
 					</li>
 					
 					<li class=''>
-						<a href='$pageConfig->url_profile'>
+						<a href='$pageData->url_profile'>
 							<i class='menu-icon fa fa-users'></i>
 							<span class='menu-text'> Profile </span>
 						</a>

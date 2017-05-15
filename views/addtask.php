@@ -5,7 +5,7 @@
  * Date: 23-Apr-17
  * Time: 11:13 PM
  */
-//$pageConfig->assign=include_once"module/assign.php";
+//$pageData->assign=include_once"module/assign.php";
 
 $page_new_task="
     <div class='col-sm-6'>
@@ -96,4 +96,4 @@ $page_new_task="
 		<div class='well well-sm'> This is a small well </div>
 	</div>
 ";
-$pageConfig->pagecontent="$page_new_task";
+$pageData->pagecontent="$page_new_task";

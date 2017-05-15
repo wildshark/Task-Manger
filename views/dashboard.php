@@ -8,7 +8,9 @@
 
 include_once "db/db.php";
 
+
 function getTotalTask($conn){
+
     $sql="SELECT Count(user_task.taskID) AS TotalTask FROM user_task";
     $result=$conn->query($sql);
     $row= $result->fetch_assoc();
@@ -42,6 +44,7 @@ function getTotalTeam($conn){
 }
 
 function getPersonalAchieved($conn){
+
     $user_id=$_SESSION['userID'];
     $sql="SELECT Count(user_task.taskID) AS TotalTask FROM user_task WHERE user_task.userID = $user_id";
     $result=$conn->query($sql);
@@ -131,16 +134,16 @@ function getDeptPending($conn){
 }
 
 
-$pageConfig->totaltask=getTotalTask($conn);
-$pageConfig->totalachieved=getTotalAchieved($conn);
-$pageConfig->totalpending=getTotalPending($conn);
-$pageConfig->totalteam=getTotalTeam($conn);
+$pageData->totaltask=getTotalTask($conn);
+$pageData->totalachieved=getTotalAchieved($conn);
+$pageData->totalpending=getTotalPending($conn);
+$pageData->totalteam=getTotalTeam($conn);
 
-$pageConfig->personalachieve=getPersonalAchieved($conn);
-$pageConfig->personalpend=getPersonalPending($conn);
+$pageData->personalachieve=getPersonalAchieved($conn);
+$pageData->personalpend=getPersonalPending($conn);
 
-$pageConfig->deptachieve=getDeptAchieved($conn);
-$pageConfig->deptpend=getDeptPending($conn);
+$pageData->deptachieve=getDeptAchieved($conn);
+$pageData->deptpend=getDeptPending($conn);
 
     $page="
             <div class='col-sm-6'>
@@ -153,22 +156,22 @@ $pageConfig->deptpend=getDeptPending($conn);
 				<a href='#' class='btn btn-default btn-app radius-4'>
 					<i class='ace-icon fa fa-users bigger-250'></i>
 				    	View Task
-						<span class='badge badge-pink'>$pageConfig->totaltask</span>
+						<span class='badge badge-pink'>$pageData->totaltask</span>
 				</a>
 				<a href='#' class='btn btn-default btn-app radius-4'>
 					<i class='ace-icon fa fa-coffee bigger-250'></i>
 				    	Achieved
-						<span class='badge badge-pink'>$pageConfig->totalachieved</span>
+						<span class='badge badge-pink'>$pageData->totalachieved</span>
 				</a>
 				<a href='#' class='btn btn-default btn-app radius-4'>
 					<i class='ace-icon fa fa-cogs bigger-250'></i>
 				    	Pending
-						<span class='badge badge-pink'>$pageConfig->totalpending</span>
+						<span class='badge badge-pink'>$pageData->totalpending</span>
 				</a>
 				<a href='#' class='btn btn-default btn-app radius-4'>
 					<i class='ace-icon fa fa-users bigger-250'></i>
 				    	teams
-						<span class='badge badge-pink'>$pageConfig->totalteam</span>
+						<span class='badge badge-pink'>$pageData->totalteam</span>
 				</a>
 				<h3 class='header smaller lighter green'>Quick Task</h3>
 				<form action='module/new_task.php' method='get' class='form-horizontal' role='form' enctype='application/x-www-form-urlencoded'>
@@ -237,16 +240,16 @@ $pageConfig->deptpend=getDeptPending($conn);
                    <h3 class='header smaller lighter green'>Personal Evolution</h3>
                     <div class='form-group'>
                         <label class='col-sm-2 control-label no-padding-right' for='form-field-1'>Achieved</label>
-                            <div class='col-sm-8 progress pos-rel' data-percent='$pageConfig->personalachieve'>
-                            <div class='progress-bar' style='width:$pageConfig->personalachieve;'></div>
+                            <div class='col-sm-8 progress pos-rel' data-percent='$pageData->personalachieve'>
+                            <div class='progress-bar' style='width:$pageData->personalachieve;'></div>
                         </div>
                     </div>
                 </div>
                 <div class='row'>
                     <div class='form-group'>
                             <label class='col-sm-2 control-label no-padding-right' for='form-field-1'>Pending</label>
-                                <div class='col-sm-8 progress pos-rel' data-percent='$pageConfig->personalpend'>
-                                <div class='progress-bar' style='width:$pageConfig->personalpend;'></div>
+                                <div class='col-sm-8 progress pos-rel' data-percent='$pageData->personalpend'>
+                                <div class='progress-bar' style='width:$pageData->personalpend;'></div>
                             </div>
                     </div>
                 </div>
@@ -257,18 +260,18 @@ $pageConfig->deptpend=getDeptPending($conn);
                    <h3 class='header smaller lighter green'>Department Evolution</h3>
                     <div class='form-group'>
                         <label class='col-sm-2 control-label no-padding-right' for='form-field-1'>Achieved</label>
-                            <div class='col-sm-8 progress pos-rel' data-percent='$pageConfig->deptachieve'>
-                            <div class='progress-bar' style='width:$pageConfig->deptachieve;'></div>
+                            <div class='col-sm-8 progress pos-rel' data-percent='$pageData->deptachieve'>
+                            <div class='progress-bar' style='width:$pageData->deptachieve;'></div>
                         </div>
                     </div>
                 </div>
                 <div class='row'>
                     <div class='form-group'>
                             <label class='col-sm-2 control-label no-padding-right' for='form-field-1'>Pending</label>
-                                <div class='col-sm-8 progress pos-rel' data-percent='$pageConfig->deptpend'>
-                                <div class='progress-bar' style='width:$pageConfig->deptpend;'></div>
+                                <div class='col-sm-8 progress pos-rel' data-percent='$pageData->deptpend'>
+                                <div class='progress-bar' style='width:$pageData->deptpend;'></div>
                             </div>
                     </div>
                 </div>
             </div>";
-$pageConfig->pagecontent=$page;
+$pageData->pagecontent=$page;

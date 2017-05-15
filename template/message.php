@@ -13,7 +13,7 @@ $pageEmail="
   <meta http-equiv='Content-Type' content='text/html; charset=UTF-8' />
   <meta name='viewport' content='initial-scale=1.0' />
   <meta name='format-detection' content='telephone=no' />
-  <title>$pageConfig->headertitle</title>
+  <title>$pageData->headertitle</title>
   <style type='text/css'>
  	body {
 		width: 100%;
@@ -108,14 +108,14 @@ $pageEmail="
 
 <table class='table-row' width='450' bgcolor='#FFFFFF' style='table-layout: fixed; background-color: #ffffff;' cellspacing='0' cellpadding='0' border='0'><tbody><tr><td class='table-row-td' style='font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;' valign='top' align='left'>
   <table class='table-col' align='left' width='378' cellspacing='0' cellpadding='0' border='0' style='table-layout: fixed;'><tbody><tr><td class='table-col-td' width='378' style='font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; width: 378px;' valign='top' align='left'>
-    <table class='header-row' width='378' cellspacing='0' cellpadding='0' border='0' style='table-layout: fixed;'><tbody><tr><td class='header-row-td' width='378' style='font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; margin: 0px; font-size: 18px; padding-bottom: 10px; padding-top: 15px;' valign='top' align='left'>$pageConfig->contenttitle</td></tr></tbody></table>
+    <table class='header-row' width='378' cellspacing='0' cellpadding='0' border='0' style='table-layout: fixed;'><tbody><tr><td class='header-row-td' width='378' style='font-family: Arial, sans-serif; font-weight: normal; line-height: 19px; color: #478fca; margin: 0px; font-size: 18px; padding-bottom: 10px; padding-top: 15px;' valign='top' align='left'>$pageData->contenttitle</td></tr></tbody></table>
     <div style='font-family: Arial, sans-serif; line-height: 20px; color: #444444; font-size: 13px;'>
-      <b style='color: #777777;'>$pageConfig->message1</b>
+      <b style='color: #777777;'>$pageData->message1</b>
       <br>
-      $pageConfig->message2
+      $pageData->message2
       <p></p>
-      <b>Username : $pageConfig->name</b><br>
-      <b>Password : $pageConfig->password</b>
+      <b>Username : $pageData->name</b><br>
+      <b>Password : $pageData->password</b>
     </div>
   </td></tr></tbody></table>
 </td></tr></tbody></table>
@@ -127,7 +127,7 @@ $pageEmail="
 <table class='table-row' width='450' bgcolor='#FFFFFF' style='table-layout: fixed; background-color: #ffffff;' cellspacing='0' cellpadding='0' border='0'><tbody><tr><td class='table-row-td' style='font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 36px; padding-right: 36px;' valign='top' align='left'>
   <table class='table-col' align='left' width='378' cellspacing='0' cellpadding='0' border='0' style='table-layout: fixed;'><tbody><tr><td class='table-col-td' width='378' style='font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; width: 378px;' valign='top' align='left'>
     <div style='font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; text-align: center;'>
-      <a href='$pageConfig->url' style='color: #ffffff; text-decoration: none; margin: 0px; text-align: center; vertical-align: baseline; border: 4px solid #6fb3e0; padding: 4px 9px; font-size: 15px; line-height: 21px; background-color: #6fb3e0;'>&nbsp; $pageConfig->button &nbsp;</a>
+      <a href='$pageData->url' style='color: #ffffff; text-decoration: none; margin: 0px; text-align: center; vertical-align: baseline; border: 4px solid #6fb3e0; padding: 4px 9px; font-size: 15px; line-height: 21px; background-color: #6fb3e0;'>&nbsp; $pageData->button &nbsp;</a>
     </div>
     <table class='table-space' height='16' style='height: 16px; font-size: 0px; line-height: 0; width: 378px; background-color: #ffffff;' width='378' bgcolor='#FFFFFF' cellspacing='0' cellpadding='0' border='0'><tbody><tr><td class='table-space-td' valign='middle' height='16' style='height: 16px; width: 378px; background-color: #ffffff;' width='378' bgcolor='#FFFFFF' align='left'>&nbsp;</td></tr></tbody></table>
   </td></tr></tbody></table>
@@ -138,13 +138,13 @@ $pageEmail="
 <table class='table-row-fixed' width='450' bgcolor='#FFFFFF' style='table-layout: fixed; background-color: #ffffff;' cellspacing='0' cellpadding='0' border='0'><tbody><tr><td class='table-row-fixed-td' style='font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal; padding-left: 1px; padding-right: 1px;' valign='top' align='left'>
   <table class='table-col' align='left' width='448' cellspacing='0' cellpadding='0' border='0' style='table-layout: fixed;'><tbody><tr><td class='table-col-td' width='448' style='font-family: Arial, sans-serif; line-height: 19px; color: #444444; font-size: 13px; font-weight: normal;' valign='top' align='left'>
     <table width='100%' cellspacing='0' cellpadding='0' border='0' style='table-layout: fixed;'><tbody><tr><td width='100%' align='center' bgcolor='#f5f5f5' style='font-family: Arial, sans-serif; line-height: 24px; color: #bbbbbb; font-size: 13px; font-weight: normal; text-align: center; padding: 9px; border-width: 1px 0px 0px; border-style: solid; border-color: #e3e3e3; background-color: #f5f5f5;' valign='top'>
-      <a href='#' style='color: #428bca; text-decoration: none; background-color: transparent;'>$pageConfig->footcopyright</a>
+      <a href='#' style='color: #428bca; text-decoration: none; background-color: transparent;'>$pageData->footcopyright</a>
       <br>
-      <a href='$pageConfig->twitterurl' style='color: #478fca; text-decoration: none; background-color: transparent;'>twitter</a>
+      <a href='$pageData->twitterurl' style='color: #478fca; text-decoration: none; background-color: transparent;'>twitter</a>
       .
-      <a href='$pageConfig->facebookurl' style='color: #5b7a91; text-decoration: none; background-color: transparent;'>facebook</a>
+      <a href='$pageData->facebookurl' style='color: #5b7a91; text-decoration: none; background-color: transparent;'>facebook</a>
       .
-      <a href='$pageConfig->rssurl' style='color: #dd5a43; text-decoration: none; background-color: transparent;'>google+</a>
+      <a href='$pageData->rssurl' style='color: #dd5a43; text-decoration: none; background-color: transparent;'>google+</a>
     </td></tr></tbody></table>
   </td></tr></tbody></table>
 </td></tr></tbody></table>

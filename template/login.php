@@ -52,10 +52,10 @@ $pageLogin="
                     <div class='center'>
                         <h1>
                             <i class='ace-icon fa fa-leaf green'></i>
-                            <span class='red'>Ace</span>
-                            <span class='white' id='id-text2'>Application</span>
+                            <span class='red'>Task</span>
+                            <span class='white' id='id-text2'>Manger</span>
                         </h1>
-                        <h4 class='blue' id='id-company-text'>&copy; Company Name</h4>
+                        <h4 class='blue' id='id-company-text'>&copy; Ghana CU</h4>
                     </div>
 
                     <div class='space-6'></div>
@@ -237,7 +237,7 @@ $pageLogin="
                                             </label>
 
                                             <label class='block'>
-                                                <input type='checkbox' class='ace' />
+                                                <input name='ckBox' type='checkbox' class='ace' value='1' />
 														<span class='lbl'>
 															I accept the
 															<a href='#'>User Agreement</a>

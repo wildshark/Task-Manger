@@ -12,48 +12,48 @@ $pageProfile="
 	<head>
 		<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' />
 		<meta charset='utf-8' />
-		<title>$pageConfig->headertitle</title>
+		<title>$pageData->headertitle</title>
 
 		<meta name='description' content='3 styles with inline editable feature' />
 		<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0' />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel='stylesheet' href='$pageConfig->bootstrap_css' />
-		<link rel='stylesheet' href='$pageConfig->font_awesome' />
+		<link rel='stylesheet' href='$pageData->bootstrap_css' />
+		<link rel='stylesheet' href='$pageData->font_awesome' />
 
 		<!-- page specific plugin styles -->
-		<link rel='stylesheet' href='$pageConfig->jquery_custom_min_css' />
-		<link rel='stylesheet' href='$pageConfig->jquery_gritter_min_css' />
-		<link rel='stylesheet' href='$pageConfig->select2_min_css' />
-		<link rel='stylesheet' href='$pageConfig->bootstrap_date_picker3_css' />
-		<link rel='stylesheet' href='$pageConfig->bootstrap_editable_min_css' />
+		<link rel='stylesheet' href='$pageData->jquery_custom_min_css' />
+		<link rel='stylesheet' href='$pageData->jquery_gritter_min_css' />
+		<link rel='stylesheet' href='$pageData->select2_min_css' />
+		<link rel='stylesheet' href='$pageData->bootstrap_date_picker3_css' />
+		<link rel='stylesheet' href='$pageData->bootstrap_editable_min_css' />
 
 		<!-- text fonts -->
-		<link rel='stylesheet' href='$pageConfig->google_fonts' />
+		<link rel='stylesheet' href='$pageData->google_fonts' />
 
 		<!-- ace styles -->
-		<link rel='stylesheet' href='$pageConfig->ace_styles' class='ace-main-stylesheet' id='main-ace-style' />
+		<link rel='stylesheet' href='$pageData->ace_styles' class='ace-main-stylesheet' id='main-ace-style' />
 
 		<!--[if lte IE 9]>
-			<link rel='stylesheet' href='$pageConfig->ace_part2_min_css' class='ace-main-stylesheet' />
+			<link rel='stylesheet' href='$pageData->ace_part2_min_css' class='ace-main-stylesheet' />
 		<![endif]-->
-		<link rel='stylesheet' href='$pageConfig->aceskins_style_sheet' />
-		<link rel='stylesheet' href='$pageConfig->acertl_style_sheet' />
+		<link rel='stylesheet' href='$pageData->aceskins_style_sheet' />
+		<link rel='stylesheet' href='$pageData->acertl_style_sheet' />
 
 		<!--[if lte IE 9]>
-		  <link rel='stylesheet' href='$pageConfig->ace_is_min_css' />
+		  <link rel='stylesheet' href='$pageData->ace_is_min_css' />
 		<![endif]-->
 
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src='$pageConfig->ace_setting_handler'></script>
+		<script src='$pageData->ace_setting_handler'></script>
 
 		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 
 		<!--[if lte IE 8]>
-		<script src='$pageConfig->html5_shiv_min'></script>
-		<script src='$pageConfig->respond_min'></script>
+		<script src='$pageData->html5_shiv_min'></script>
+		<script src='$pageData->respond_min'></script>
 		<![endif]-->
 	</head>
         <body class='no-skin'>
@@ -70,10 +70,10 @@ $pageProfile="
                         </button>
 
                         <div class='navbar-header pull-left'>
-                            <a href='$pageConfig->url_dashboard' class='navbar-brand'>
+                            <a href='$pageData->url_dashboard' class='navbar-brand'>
                                 <small>
                                     <i class='fa fa-leaf'></i>
-                                       $pageConfig->dashboardtitle
+                                       $pageData->dashboardtitle
                                 </small>
                             </a>
                         </div>
@@ -241,7 +241,7 @@ $pageProfile="
                                             <ul class='dropdown-menu dropdown-navbar'>
                                                 <li>
                                                     <a href='#' class='clearfix'>
-                                                        <img src='$pageConfig->avatar1' class='msg-photo' alt='$pageConfig->altName' />
+                                                        <img src='$pageData->avatar1' class='msg-photo' alt='$pageData->altName' />
                                                         <span class='msg-body'>
                                                             <span class='msg-title'>
                                                                 <span class='blue'>Alex:</span>
@@ -258,7 +258,7 @@ $pageProfile="
 
                                                 <li>
                                                     <a href='#' class='clearfix'>
-                                                        <img src='$pageConfig->avatar2' class='msg-photo' alt='$pageConfig->altName' />
+                                                        <img src='$pageData->avatar2' class='msg-photo' alt='$pageData->altName' />
                                                         <span class='msg-body'>
                                                             <span class='msg-title'>
                                                                 <span class='blue'>Susan:</span>
@@ -287,10 +287,10 @@ $pageProfile="
 
                                 <li class='light-blue dropdown-modal'>
                                     <a data-toggle='dropdown' href='#' class='dropdown-toggle'>
-                                        <img class='nav-user-photo' src='$pageConfig->userimages' alt='$pageConfig->altName' />
+                                        <img class='nav-user-photo' src='$pageData->userimages' alt='$pageData->altName' />
                                         <span class='user-info'>
-                                            <small>$pageConfig->welcomelabel</small>
-                                            $pageConfig->usernamelabel
+                                            <small>$pageData->welcomelabel</small>
+                                            $pageData->usernamelabel
                                         </span>
 
                                         <i class='ace-icon fa fa-caret-down'></i>
@@ -305,7 +305,7 @@ $pageProfile="
                                         </li>
 
                                         <li>
-                                            <a href='$pageConfig->url_profile'>
+                                            <a href='$pageData->url_profile'>
                                                 <i class='ace-icon fa fa-user'></i>
                                                 Profile
                                             </a>
@@ -314,7 +314,7 @@ $pageProfile="
                                         <li class='divider'></li>
 
                                         <li>
-                                            <a href='$pageConfig->url_logout'>
+                                            <a href='$pageData->url_logout'>
                                                 <i class='ace-icon fa fa-power-off'></i>
                                                 Logout
                                             </a>
@@ -367,7 +367,7 @@ $pageProfile="
                         </div><!-- /.sidebar-shortcuts -->
                             <!--widgets menu bar-->
 
-                            $pageConfig->pagewidgets
+                            $pageData->pagewidgets
 
 				            <!-- /.Widget menu bar-list -->
                         <!-- /.nav-list -->
@@ -389,7 +389,7 @@ $pageProfile="
                                     <li>
                                         <a href='#'>More Pages</a>
                                     </li>
-                                    <li class='active'>$pageConfig->activepage</li>
+                                    <li class='active'>$pageData->activepage</li>
                                 </ul><!-- /.breadcrumb -->
 
                                 <div class='nav-search' id='nav-search'>
@@ -472,21 +472,21 @@ $pageProfile="
 
                                 <div class='page-header'>
                                     <h1>
-                                        $pageConfig->contenttitle
+                                        $pageData->contenttitle
                                         <small>
                                             <i class='ace-icon fa fa-angle-double-right'></i>
-                                            $pageConfig->pageoverview
+                                            $pageData->pageoverview
                                         </small>
                                     </h1>
                                 </div><!-- /.page-header -->
 
                                 <div class='row'>
                                     <div class='col-xs-12'>
-                                        <div class='$pageConfig->css'>
-                                            $pageConfig->pagewarming
+                                        <div class='$pageData->css'>
+                                            $pageData->pagewarming
                                         </div>
                                         <!-- PAGE CONTENT BEGINS -->
-                                        $pageConfig->pagecontent
+                                        $pageData->pagecontent
                                         <!-- PAGE CONTENT ENDS -->
                                     </div><!-- /.col -->
                                 </div><!-- /.row -->
@@ -499,20 +499,20 @@ $pageProfile="
                             <div class='footer-content'>
                                 <span class='bigger-120'>
                                     <span class='blue bolder'>
-                                    $pageConfig->footcopyright
+                                    $pageData->footcopyright
                                 </span>
 
                                 &nbsp; &nbsp;
                                 <span class='action-buttons'>
-                                    <a href='$pageConfig->twitterurl'>
+                                    <a href='$pageData->twitterurl'>
                                         <i class='ace-icon fa fa-twitter-square light-blue bigger-150'></i>
                                     </a>
 
-                                    <a href='$pageConfig->facebookurl'>
+                                    <a href='$pageData->facebookurl'>
                                         <i class='ace-icon fa fa-facebook-square text-primary bigger-150'></i>
                                     </a>
 
-                                    <a href='$pageConfig->rssurl'>
+                                    <a href='$pageData->rssurl'>
                                         <i class='ace-icon fa fa-rss-square orange bigger-150'></i>
                                     </a>
                                 </span>
@@ -528,12 +528,12 @@ $pageProfile="
 	<!-- basic scripts -->
 
 		<!--[if !IE]> -->
-		<script src='$pageConfig->jquery'></script>
+		<script src='$pageData->jquery'></script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
-<script src='$pageConfig->jquery_1'></script>
+<script src='$pageData->jquery_1'></script>
 <![endif]-->
 		<script type='text/javascript'>
 			if('ontouchstart' in document.documentElement) document.write('<script src='assets/js/jquery.mobile.custom.min.js'>'+'<'+'/script>');
@@ -543,25 +543,25 @@ $pageProfile="
 		<!-- page specific plugin scripts -->
 
 		<!--[if lte IE 8]>
-		  <script src='$pageConfig->excanvas_min'></script>
+		  <script src='$pageData->excanvas_min'></script>
 		<![endif]-->
-		<script src='$pageConfig->jquery_ui_custom_min'></script>
-		<script src='$pageConfig->jquery_ui_touch_punch_min'></script>
-		<script src='$pageConfig->jquery_gritter_min'></script>
-		<script src='$pageConfig->boot_box'></script>
-		<script src='$pageConfig->easy_pie_chart_min'></script>
-		<script src='$pageConfig->bootstrap_date_picker'></script>
-		<script src='$pageConfig->jquery_hotkeys_index_min'></script>
-		<script src='$pageConfig->bootstrap_wysiwyg_min'></script>
-		<script src='$pageConfig->select2_min'></script>
-		<script src='$pageConfig->spin_box'></script>
-		<script src='$pageConfig->bootstrap_editable_min'></script>
-		<script src='$pageConfig->ace_editable_min'></script>
-		<script src='$pageConfig->jquery_masked_input_min'></script>
+		<script src='$pageData->jquery_ui_custom_min'></script>
+		<script src='$pageData->jquery_ui_touch_punch_min'></script>
+		<script src='$pageData->jquery_gritter_min'></script>
+		<script src='$pageData->boot_box'></script>
+		<script src='$pageData->easy_pie_chart_min'></script>
+		<script src='$pageData->bootstrap_date_picker'></script>
+		<script src='$pageData->jquery_hotkeys_index_min'></script>
+		<script src='$pageData->bootstrap_wysiwyg_min'></script>
+		<script src='$pageData->select2_min'></script>
+		<script src='$pageData->spin_box'></script>
+		<script src='$pageData->bootstrap_editable_min'></script>
+		<script src='$pageData->ace_editable_min'></script>
+		<script src='$pageData->jquery_masked_input_min'></script>
 
 		<!-- ace scripts -->
-		<script src='$pageConfig->ace_elements'></script>
-		<script src='$pageConfig->ace'></script>
+		<script src='$pageData->ace_elements'></script>
+		<script src='$pageData->ace'></script>
 
 	</body>
 </html>";

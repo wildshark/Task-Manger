@@ -12,13 +12,13 @@
     $result=$conn->query($sql);
     $row= $result->fetch_assoc();
 
-    $pageConfig->userPath=$_SESSION['photo'];
-    $pageConfig->fullName=$row['FullName'];
-    $pageConfig->username=$row['UserName'];
-    $pageConfig->password=$row['Passwd'];
-    $pageConfig->userEmail=$row['Email'];
-    $pageConfig->department=$row['Department'];
-    $pageConfig->join=$row['CreatedDate'];
+    $pageData->userPath=$_SESSION['photo'];
+    $pageData->fullName=$row['FullName'];
+    $pageData->username=$row['UserName'];
+    $pageData->password=$row['Passwd'];
+    $pageData->userEmail=$row['Email'];
+    $pageData->department=$row['Department'];
+    $pageData->join=$row['CreatedDate'];
 
                 $page_profile="
                                 <div class='clearfix'>
@@ -57,7 +57,7 @@
 										<div class='col-xs-12 col-sm-3 center'>
 											<div>
 												<span class='profile-picture'>
-													<img id='avatar' class='editable img-responsive' alt='Alex's Avatar' width='180' height='200' src='$pageConfig->userPath' />
+													<img id='avatar' class='editable img-responsive' alt='Alex's Avatar' width='180' height='200' src='$pageData->userPath' />
 												</span>
 
 												<div class='space-4'></div>
@@ -67,7 +67,7 @@
 														<a href='#' class='user-title-label dropdown-toggle' data-toggle='dropdown'>
 															<i class='ace-icon fa fa-circle light-green'></i>
 															&nbsp;
-															<span class='white'>$pageConfig->fullName</span>
+															<span class='white'>$pageData->fullName</span>
 														</a>
 
 													</div>
@@ -125,7 +125,7 @@
 													<div class='profile-info-name'> Username </div>
 
 													<div class='profile-info-value'>
-														<span class='editable' id='username'>$pageConfig->username</span>
+														<span class='editable' id='username'>$pageData->username</span>
 													</div>
 												</div>
 												
@@ -134,7 +134,7 @@
 
 													<div class='profile-info-value'>
 														<i class='fa fa-map-marker light-orange bigger-110'></i>
-														<span class='editable' id='country'>$pageConfig->department</span>
+														<span class='editable' id='country'>$pageData->department</span>
 														
 													</div>
 												</div>
@@ -143,7 +143,7 @@
 													<div class='profile-info-name'> Email </div>
 
 													<div class='profile-info-value'>
-														<span class='editable' id='age'>$pageConfig->userEmail</span>
+														<span class='editable' id='age'>$pageData->userEmail</span>
 													</div>
 												</div>
 
@@ -151,7 +151,7 @@
 													<div class='profile-info-name'> Joined </div>
 
 													<div class='profile-info-value'>
-														<span class='editable' id='signup'>$pageConfig->join</span>
+														<span class='editable' id='signup'>$pageData->join</span>
 													</div>
 												</div>
 
@@ -235,7 +235,7 @@
 
 														<div class='col-xs-12 col-sm-9'>
 															<h4 class='blue'>
-																<span class='middle'>$pageConfig->fullName</span>
+																<span class='middle'>$pageData->fullName</span>
 
 																<span class='label label-purple arrowed-in-right'>
 																	<i class='ace-icon fa fa-circle smaller-80 align-middle'></i>
@@ -1598,4 +1598,4 @@
 										</div><!-- /.span -->
 									</div><!-- /.user-profile -->
 								</div>";
-$pageConfig->pagecontent=$page_profile;
+$pageData->pagecontent=$page_profile;
